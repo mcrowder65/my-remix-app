@@ -27,7 +27,7 @@ function isValidPostAttributes(
   return attributes?.title
 }
 // relative to the server output not the source!
-const postsPath = path.join(__dirname, "..", "posts")
+const postsPath = path.join(__dirname, "../..", "posts")
 
 export async function getPost(slug: string) {
   const filepath = path.join(postsPath, slug + ".md")
